@@ -1,3 +1,3 @@
-Altari Simulator
+Altair Simulator
 ========
-For demo, <a href='http://altari.oguzgelal.com' target='_new'>altari.oguzgelal.com</a>.
+For demo, <a href='http://altair.oguzgelal.com' target='_new'>altair.oguzgelal.com</a>.

@@ -1,0 +1,388 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.credentials {
+    color: white;
+}
+.credentials a {
+    color: lightblue;
+    text-decoration: none;
+}
+.credentials a:hover {
+    color: white;
+}
+
+/* Layout */
+.altari-header {
+    color: white;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.altari-container {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.altari-img-container {
+    width: 900px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+.altari-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Leds */
+.led {
+    margin: 20px auto;
+    width: 10px;
+    height: 10px;
+    background-color: #660000;
+    border-radius: 50%;
+    box-shadow: #000 0 -1px 3px 1px, inset #600 0 -1px 5px;
+}
+.led.active {
+    margin: 20px auto;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: #000 0 -1px 7px 1px, inset #600 0 -1px 9px, #F00 0 2px 15px;
+}
+
+/* power */
+.led-power-1 {
+    position: absolute;
+    top: 78px;
+    left: 104px;
+}
+.led-power-2 {
+    position: absolute;
+    top: 78px;
+    left: 134px;
+}
+.led-power-3 {
+    position: absolute;
+    top: 140px;
+    left: 104px;
+}
+.led-power-4 {
+    position: absolute;
+    top: 140px;
+    left: 134px;
+}
+/* line */
+.led-line-1 {
+    position: absolute;
+    top: 76px;
+    left: 169px;
+}
+.led-line-2 {
+    position: absolute;
+    top: 76px;
+    left: 202px;
+}
+.led-line-3 {
+    position: absolute;
+    top: 76px;
+    left: 235px;
+}
+.led-line-4 {
+    position: absolute;
+    top: 76px;
+    left: 268px;
+}
+.led-line-5 {
+    position: absolute;
+    top: 76px;
+    left: 301px;
+}
+.led-line-6 {
+    position: absolute;
+    top: 76px;
+    left: 334px;
+}
+.led-line-7 {
+    position: absolute;
+    top: 76px;
+    left: 367px;
+}
+.led-line-8 {
+    position: absolute;
+    top: 76px;
+    left: 400px;
+}
+/* led d-series */
+.led-d7 {
+    position: absolute;
+    top: 82px;
+    left: 512.5px;
+}
+.led-d6 {
+    position: absolute;
+    top: 82px;
+    left: 545px;
+}
+.led-d5 {
+    position: absolute;
+    top: 82px;
+    left: 594px;
+}
+.led-d4 {
+    position: absolute;
+    top: 82px;
+    left: 626px;
+}
+.led-d3 {
+    position: absolute;
+    top: 82px;
+    left: 659px;
+}
+.led-d2 {
+    position: absolute;
+    top: 82px;
+    left: 708px;
+}
+.led-d1 {
+    position: absolute;
+    top: 82px;
+    left: 741px;
+}
+.led-d0 {
+    position: absolute;
+    top: 82px;
+    left: 774px;
+}
+/* led a-series */
+.led-a15 {
+    position: absolute;
+    top: 140px;
+    left: 208px;
+}
+.led-a14 {
+    position: absolute;
+    top: 140px;
+    left: 256px;
+}
+.led-a13 {
+    position: absolute;
+    top: 140px;
+    left: 288px;
+}
+.led-a12 {
+    position: absolute;
+    top: 140px;
+    left: 320px;
+}
+.led-a11 {
+    position: absolute;
+    top: 140px;
+    left: 368px;
+}
+.led-a10 {
+    position: absolute;
+    top: 140px;
+    left: 401px;
+}
+.led-a9 {
+    position: absolute;
+    top: 140px;
+    left: 434px;
+}
+.led-a8 {
+    position: absolute;
+    top: 140px;
+    left: 482px;
+}
+.led-a7 {
+    position: absolute;
+    top: 140px;
+    left: 515px;
+}
+.led-a6 {
+    position: absolute;
+    top: 140px;
+    left: 547px;
+}
+.led-a5 {
+    position: absolute;
+    top: 140px;
+    left: 595px;
+}
+.led-a4 {
+    position: absolute;
+    top: 140px;
+    left: 628px;
+}
+.led-a3 {
+    position: absolute;
+    top: 140px;
+    left: 659px;
+}
+.led-a2 {
+    position: absolute;
+    top: 140px;
+    left: 708px;
+}
+.led-a1 {
+    position: absolute;
+    top: 140px;
+    left: 741px;
+}
+.led-a0 {
+    position: absolute;
+    top: 140px;
+    left: 774px;
+}
+
+/* Switches */
+
+/* a-series */
+.switch-a15 {
+    position: absolute;
+    top: 216px;
+    left: 205px;
+}
+.switch-a14 {
+    position: absolute;
+    top: 216px;
+    left: 251px;
+}
+.switch-a13 {
+    position: absolute;
+    top: 216px;
+    left: 285px;
+}
+.switch-a12 {
+    position: absolute;
+    top: 216px;
+    left: 317px;
+}
+.switch-a11 {
+    position: absolute;
+    top: 216px;
+    left: 365px;
+}
+.switch-a10 {
+    position: absolute;
+    top: 216px;
+    left: 398px;
+}
+.switch-a9 {
+    position: absolute;
+    top: 216px;
+    left: 431px;
+}
+.switch-a8 {
+    position: absolute;
+    top: 216px;
+    left: 479px;
+}
+.switch-a7 {
+    position: absolute;
+    top: 216px;
+    left: 512px;
+}
+.switch-a6 {
+    position: absolute;
+    top: 216px;
+    left: 544px;
+}
+.switch-a5 {
+    position: absolute;
+    top: 216px;
+    left: 592px;
+}
+.switch-a4 {
+    position: absolute;
+    top: 216px;
+    left: 625px;
+}
+.switch-a3 {
+    position: absolute;
+    top: 216px;
+    left: 656px;
+}
+.switch-a2 {
+    position: absolute;
+    top: 216px;
+    left: 705px;
+}
+.switch-a1 {
+    position: absolute;
+    top: 216px;
+    left: 738px;
+}
+.switch-a0 {
+    position: absolute;
+    top: 216px;
+    left: 771px;
+}
+
+/* bottom */
+.switch-on {
+    position: absolute;
+    top: 275px;
+    left: 49px;
+}
+.switch-run {
+    position: absolute;
+    top: 280px;
+    left: 207px;
+}
+.switch-single {
+    position: absolute;
+    top: 280px;
+    left: 270.5px;
+}
+.switch-program {
+    position: absolute;
+    top: 280px;
+    left: 401px;
+}
+.switch-reset {
+    position: absolute;
+    top: 280px;
+    left: 461px;
+}
+.switch-demo {
+    position: absolute;
+    top: 280px;
+    left: 528px;
+}
+.switch-addr {
+   position: absolute;
+   top: 277px;
+   left: 655px;   
+}
+
+
+
+.switch {
+    width: 20px;
+    height: 20px;
+}
+
+.switch:hover {
+    cursor: pointer;
+}
+.switch img {
+    width: 100%;
+    height: 100%;
+}
+
+
+

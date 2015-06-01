@@ -365,6 +365,7 @@ $(document).ready(function(){
 		temp_addr = [];
 	}
 	function poweron(){
+		compon = true;
 		resetComp();
 		toggleOn(powerSwitch);
 		toggleLedOn(powerLed);
@@ -374,7 +375,6 @@ $(document).ready(function(){
 			$('.led-a').each(function(){ toggleLedOff($(this)); });
 			$('.led-d').each(function(){ toggleLedOff($(this)); });
 		},1000);
-		compon = true;
 		console.log("> computer on");
 		console.log("> started at memspace "+activeMemPlace);
 		console.log("");
@@ -394,7 +394,9 @@ $(document).ready(function(){
 		if (led.hasClass('active')){ toggleLedOn(led); }
 		else{ toggleLedOff(led); }
 	}
-	function toggleLedOn(led){ led.addClass('active'); }
+	function toggleLedOn(led){
+		if (compon){ led.addClass('active'); }
+	}
 	function toggleLedOff(led){ led.removeClass('active'); }
 	function isLedOn(led){
 		return led.hasClass('active');

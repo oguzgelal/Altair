@@ -385,4 +385,14 @@ html, body {
 }
 
 
-
+.extra-info {
+    margin-top: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    background-color: rgba(255,255,255,.7);
+}

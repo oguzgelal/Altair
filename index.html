@@ -98,8 +98,163 @@
 			<div class="switch switch-addr"><img src="sw-on.png"></div>
 			
 			<div class="extra-info">
-				<!-- NOTICE : You can edit the text below and hit save -->
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut omnis quo pariatur consequuntur rem porro libero, architecto distinctio eaque, ad dignissimos corporis obcaecati ipsa numquam dolor harum fugiat! Tempore, porro.
+				<p>
+					<b><u>ALTAIR - budget programmeren in de jaren '70</u></b><br>
+					De ALTAIR was een volwaardige computer voor iedereen.<br>
+					Kon je het betalen, dan kocht je een beeldscherm en toetsenbord. <br>
+					Maar had je het geld niet, dan deed je alles binair met de knoppen en de LEDS op het frontpaneel.<br>
+					In deze simulatie kun je zelf ervaren hoe dat ging.	<br>
+				</p>
+				<p>
+					<b><u>DEMO</u></b><br>
+					De ingebouwde DEMO bevat een automatisch programma van 15 stappen. <br>
+					Het is de bedoeling dat je dit programma zelf maakt.<br>
+					Zet de DEMO modus aan door de DEMO knop AAN (=omlaag) te zetten.<br>
+					Start de DEMO door de RUN/STOP-knop AAN (=omlaag) te drukken. <br>
+					De DEMO doorloopt 16 stappen. Bij elke stap wordt een adres gecheckt.<br>
+					Dit adres wordt getoond met de LEDS A0-A15.<br>
+					De data die op dit adres staat wordt getoond met de LEDS D0-D7.<br>
+					Dit zijn de adressen en de data die getoond worden:<br>
+				</p>
+				<p>
+					<b><u>TABEL MET PROGRAMMASTAPPEN</u></b><br>
+					<table>
+						<tr>
+							<td>stap</td>
+							<td>address</td>
+							<td>data</td>
+							<td>decimal data</td>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>000</td>
+							<td>D1..D7=0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>020</td>
+							<td>D7=1</td>
+							<td>128</td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>040</td>
+							<td>D7, D6=1</td>
+							<td>192</td>
+						</tr>
+						<tr>
+							<td>04</td>
+							<td>060</td>
+							<td>D6, D5=1</td>
+							<td>96</td>
+						</tr>
+						<tr>
+							<td>05</td>
+							<td>080</td>
+							<td>D5, D4=1</td>
+							<td>48</td>
+						</tr>
+						<tr>
+							<td>06</td>
+							<td>100</td>
+							<td>D4, D3=1</td>
+							<td>24</td>
+						</tr>
+						<tr>
+							<td>07</td>
+							<td>120</td>
+							<td>D3, D2=1</td>
+							<td>12</td>
+						</tr>
+						<tr>
+							<td>08</td>
+							<td>140</td>
+							<td>D2, D1=1</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>09</td>
+							<td>160</td>
+							<td>D1, D0=1</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>180</td>
+							<td>D1..D7=0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>200</td>
+							<td>D1..D7=1</td>
+							<td>128</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>220</td>
+							<td>D1..D7=0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>240</td>
+							<td>D1..D7=1</td>
+							<td>128</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>260</td>
+							<td>D1..D7=0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>280</td>
+							<td>D2, D4, D6 =1</td>
+							<td>84</td>
+						</tr>
+						<tr>
+							<td>16</td>
+							<td>300</td>
+							<td>D1, D3, D5, D7=1</td>
+							<td>170</td>
+						</tr>
+					</table>
+				</p>
+				<p>
+					Het effect van het programma is dat bij elke stap twee LEDjes als het ware van links naar rechts lopen. <br>
+					Aan het eind van het programma knipperen alle LEDjes. <br>
+					Daarna begint het programma weer opnieuw bij stap 1. Een soort looplichtje dus.<br>
+					In werkelijkheid draait een programma als dit vele duizenden malen sneller, maar dan zou je van het loopeffect niks zien, daarom draait het hier heel langzaam.<br>
+					Dit programma ga je zelf programmeren.<br>
+				</p>
+				<p>
+					Je kunt de DEMO opnieuw starten door RUN/STOP omhoog en weer omlaag te zetten. <br>
+					Of door kort op de RESET-knop te drukken; deze knop 'veert' terug.<br>
+					Wil je de demo stap voor stap volgen, zet RUN/STOP dan uit (omhoog) en druk herhaalde malen op SINGLE STEP.<br>
+				</p>
+				<p>
+					<b><u>ZELF AAN DE SLAG</u></b><br>
+					Zet de DEMO stop. Dus zet de DEMO-knop omhoog en de RUN/STOP-knop omhoog.<br>
+					Zet alle knoppen 0-15 omhoog.<br>
+					Wis het geheugen; dat doe je door de RESET-knop twee seconden ingedrukt houden.<br>
+				</p>
+				<p>
+					Je programma bestaat uit 16 stappen.<br>
+					Bij elke stap moet je een adres programmeren en de bijbehorende data. <br>
+					Dat doe je door middel van de knoppen.<br>
+					Om geld te sparen worden voor adres en data dezelfde knoppen 0-15 gebruikt. <br>
+					Met de knop DATA/ADDRESS rechtsonder verander je de betekenis van de knoppen.<br>
+				</p>
+				<p>
+					Dankzij de RESET begin je nu automatisch bij de eerste stap.<br>
+					Zet DATA/ADDRESS in ADDRESS-modus.<br>
+					Stel met de knoppen 0-15 het eerste adres in: 0=omhoog, 1=Omlaag.<br>
+					De LEDS A0-A15 geven het ingestelde adres aan.<br>
+					Zet DATA/ADDRESS in DATA-modus.<br>
+				</p>
 			</div>
 
 

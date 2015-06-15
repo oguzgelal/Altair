@@ -391,8 +391,11 @@ html, body {
     -moz-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
-    padding: 10px;
-    text-align: center;
+    padding: 30px;
+    text-align: left;
     color: black;
     background-color: rgba(255,255,255,.7);
+}
+.extra-info p:first-of-type {
+    margin-top: 0;
 }
